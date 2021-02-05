@@ -1,0 +1,24 @@
+{
+  "name": "LikoBot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha6000/Discord.git"
+  },
+  "keywords": [],
+  "author": "Harry Kruger <krugerh27@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ha6000/Discord/issues"
+  },
+  "homepage": "https://github.com/ha6000/Discord#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "slash-create": "^1.3.0"
+  }
+}
