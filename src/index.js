@@ -15,19 +15,21 @@ const creator = new SlashCreator({
 	serverPort: 80
 });
 
-console.log(creator.options);
+// console.log(creator.options);
 
 creator.on('sync', () => {
 	console.log('commands synced');
 });
 
 creator.on('debug', (msg) => console.log(msg));
+creator.on('warn', (msg) => console.warn(msg));
+creator.on('commandError', (cmd, err) => console.error(err));
 
 creator
 	.registerCommandsIn(Path.join(__dirname, '/commands/'))
-	.syncCommands();
+	.syncCommandsIn('677485372988456970');
 
-// console.log(creator.commands);
+console.log(creator.commands);
 
 creator
 	.withServer(new ExpressServer())

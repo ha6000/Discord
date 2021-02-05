@@ -1,4 +1,4 @@
-const { SlashCommand, CommandOptionType } = require('slash-create');
+const { SlashCommand } = require('slash-create');
 
 class Ping extends SlashCommand {
 	constructor(creator) {
@@ -14,4 +14,4 @@ class Ping extends SlashCommand {
 		return 'Pong 🏓';
 	}
 }
-module.exports = Ping;
+// module.exports = Ping;
